@@ -1,0 +1,23 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.list {
+  min-height: 150px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 1rem;
+  gap: 10px;
+}
+
+.actions {
+  height: 150px;
+  gap: 20px;
+}
