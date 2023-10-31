@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color: white;
+}
+
+.movieCard {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: white solid 1px;
+  border-radius: 1rem;
+}
+
+.movieCardImage {
+  object-fit: contain;
+  height: 100px;
+}
+
+.favoriteMovieImg {
+  width: 150px;
+  height: 250px;
+}
+
+.favoriteMovie {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 1rem;
+  border: white solid 1px;
+  border-radius: 1rem;
+}
+
+.favoriteButton:hover {
+  @apply bg-slate-600;
+}
+
+.favoriteMovieBody {
+  height: 280px;
+  overflow: auto;
+}
+
+.button {
+  border: white solid 1px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.button:hover {
+  @apply bg-slate-600;
+}
