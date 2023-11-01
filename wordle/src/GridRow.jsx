@@ -11,16 +11,20 @@ const GridRow = ({ word }) => {
       {word.split('').map((char, index) => {
         const charExists = solution.includes(char);
         let className = '';
-        if(charExists) {
-          className = solution[index] === char ? 'match' : 'exists'; 
+        if (charExists) {
+          className = solution[index] === char ? 'match' : 'exists';
         } else if (char !== '0') {
-          className = 'noMatch'
+          className = 'noMatch';
         }
 
         return (
-          <GridItem key={index} character={char} className={className} />
-        )
-        })}
+          <GridItem
+            key={index}
+            character={char}
+            className={className}
+          />
+        );
+      })}
     </div>
   );
 };
