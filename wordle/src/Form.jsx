@@ -6,13 +6,8 @@ const Form = ({ submitForm }) => {
 
   const handleChange = (event) => {
     event.preventDefault();
-    const isValidWord = event.target.value
-      .toLowerCase()
-      .match(/^[a-z]+$/);
-    const isValidInput = word.length < 5 && isValidWord;
-    if (isValidInput) {
-      setWord(event.target.value);
-    }
+    console.log(event.target.value)
+    setWord(event.target.value);
   };
 
   const check = (e) => {
@@ -44,6 +39,7 @@ const Form = ({ submitForm }) => {
         className="border border-gray-500 py-2 px-1 rounded-lg text-center"
         type="text"
         value={word}
+        maxLength="5"
         placeholder="...apple"
         onKeyDown={check}
         onKeyUp={check}
